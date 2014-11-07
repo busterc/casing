@@ -1,0 +1,35 @@
+{
+  "name": "casing",
+  "version": "1.0.0",
+  "description": "Recursively transform object key strings to and from camelCase and snake_case (underscore)",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/busterc/casing.git"
+  },
+  "keywords": [
+    "camelcase",
+    "camel-case",
+    "camelize",
+    "camel",
+    "snakecase",
+    "snake-case",
+    "snakeize",
+    "snake",
+    "case",
+    "underscore",
+    "underscorify"
+  ],
+  "author": "Buster Collings",
+  "license": "MIT",
+  "homepage": "https://github.com/busterc/casing",
+  "dependencies": {
+    "camelize": "^1.0.0",
+    "snakeize": "0.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "jshint-stylish": "^1.0.0"
+  }
+}
