@@ -1,36 +1,74 @@
 {
   "name": "casing",
-  "version": "1.0.0",
   "description": "Recursively transform object key strings to and from camelCase and snake_case (underscore)",
-  "main": "main.js",
-  "types": "main.d.ts",
+  "license": "MIT",
+  "author": "Buster Collings",
+  "homepage": "https://github.com/busterc/casing",
   "repository": {
     "type": "git",
     "url": "https://github.com/busterc/casing.git"
   },
-  "keywords": [
-    "camelcase",
-    "camel-case",
-    "camelize",
-    "camel",
-    "snakecase",
-    "snake-case",
-    "snakeize",
-    "snake",
-    "case",
-    "underscore",
-    "underscorify"
-  ],
-  "author": "Buster Collings",
-  "license": "MIT",
-  "homepage": "https://github.com/busterc/casing",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest"
+  },
   "dependencies": {
     "camelize": "^1.0.0",
-    "snakeize": "0.0.1"
+    "snakeize": "^0.1.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-jshint": "^1.9.0",
-    "jshint-stylish": "^1.0.0"
-  }
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-xo": "^0.26.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.2.0",
+    "jest": "^23.6.0",
+    "jest-given": "^1.0.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.2"
+  },
+  "keywords": [
+    "camel",
+    "camel-case",
+    "camelcase",
+    "camelize",
+    "case",
+    "snake",
+    "snake-case",
+    "snakecase",
+    "snakeize",
+    "underscore",
+    "underscorify",
+    "knex",
+    "bookshelf"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "types": "main.d.ts"
 }

@@ -1,18 +1,18 @@
 # casing
 
-Recursively transform object key strings to and from camelCase and snake_case
+> Recursively transform object key strings to and from camelCase and snake_case.
 
-Supports objects, arrays and a combination of both in any depth.
-
-## Version 1.0.0
+- Supports objects, arrays and a combination of both in any depth.
+- Was originally intended for use with BookShelf and Knex.
 
 ## Installation
 
-```javascript
-$ npm install --save casing
+```sh
+$ npm install casing
 ```
 
 ## Usage
+
 ```javascript
 'use strict';
 var casing = require('casing');
@@ -46,9 +46,6 @@ var was_snake = { obj_id: 456 };
 camelize(was_snake);
 ```
 
-## Dependencies
-- [snakeize](https://www.npmjs.org/package/snakeize)
-- [camelize](https://www.npmjs.org/package/camelize)
-
 ## License
+
 MIT

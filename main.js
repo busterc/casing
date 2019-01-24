@@ -1,12 +1,9 @@
-'use strict';
-module.exports = function() {
-  var camelize = require('camelize');
-  var snakeize = require('snakeize');
+"use strict";
 
-  var casing = {
-    camelize: camelize,
-    snakeize: snakeize
-  };
+var camelize = require("camelize");
+var snakeize = require("snakeize");
 
-  return casing;
-}();
+module.exports = {
+  camelize: camelize,
+  snakeize: snakeize
+};
