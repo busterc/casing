@@ -2,6 +2,8 @@
 
 Recursively transform object key strings to and from camelCase and snake_case
 
+Supports objects, arrays and a combination of both in any depth.
+
 ## Version 1.0.0
 
 ## Installation
@@ -28,6 +30,20 @@ var was_snake = {
 };
 console.log(casing.camelize(was_snake));
 // => { objId: 456, myName: 'fiddycent' }
+```
+
+### TypeScript
+
+This package includes a definition file for TypeScript.
+
+```ts
+import { camelize, snakeize } from 'casing';
+
+var wasCamel = { objId: 123 };
+snakeize(wasCamel);
+
+var was_snake = { obj_id: 456 };
+camelize(was_snake);
 ```
 
 ## Dependencies

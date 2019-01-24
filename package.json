@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Recursively transform object key strings to and from camelCase and snake_case (underscore)",
   "main": "main.js",
+  "types": "main.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/busterc/casing.git"
